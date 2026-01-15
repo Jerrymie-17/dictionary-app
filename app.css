@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(360deg, #1d2133, #4e02a0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search-section input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+.search-section button {
+    padding: 0.75rem;
+    background-color: #4e02a0;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.search-section button:hover {
+    background-color: #5a6fdc;
+}
+
+/* Results section */
+.result-section {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    min-height: 120px;
+}
+
+.placeholder {
+    color: #888;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* example result styling for JS later */
+.result-section h2 {
+    margin-bottom: 0.4rem;
+}
+
+.result-section .phonetic {
+    color: #667eea;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 0.4rem;
+}
+
+.result-section .meaning {
+    margin-bottom: 0.5rem;
+}
+
+.result-section .example {
+    background: #eef1ff;
+    padding: 0.5rem;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #777;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .app {
+        padding: 2rem;
+        max-width: 800px;
+    }
+
+    .search-section {
+        justify-content: center;
+    }
+
+    .search-section input {
+        width: 50%;
+    }
+
+    .search-section button {
+        width: 20%;
+    }
+
+    .result-section {
+        padding: 1rem;
+        border-radius: 10px;
+        min-height: 120px;
+    }
+
+    .result-section .example {
+        background: #eef1ff;
+        padding: 0.5rem;
+        border-left: 4px solid #667eea;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+
+    .result-section .example p {
+        margin: 0;
+    }
+
+    .result-section .example::before {
+        content: "\2022";
+        margin-right: 0.5rem;
+    }
+
+    .result-section .example p {
+        margin: 0;
+    }
+
+    .result-section .example::before {
+        content: "\2022";
+        margin-right: 0.5rem;
+    }
+
+    .result-section .example p {
+        margin: 0;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+}
